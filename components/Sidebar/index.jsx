@@ -6,14 +6,14 @@ export default function Sidebar(props) {
         className={`${
           props.Open
             ? "w-1/5 bg-gray-600 fixed h-screen right-0 bg-opacity-50 lg:hidden z-10"
-            : "hidden"
+            : "hidden "
         } `}
       />
       <div
         className={`${
           props.Open
-            ? "bg-gray-800 w-4/5 fixed h-screen left-0 overflow-y-auto text-white lg:w-1/4 z-10"
-            : "hidden"
+            ? "bg-gray-800 w-4/5 fixed h-screen left-0 overflow-y-auto text-white z-10"
+            : "hidden lg:block lg:fixed lg:bg-gray-800 lg:w-1/4 lg:h-screen lg:left-0 lg:overflow-y-auto lg:text-white"
         } `}
       >
         <div className="flex flex-col px-8 pt-8 pb-16">
