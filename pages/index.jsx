@@ -51,9 +51,16 @@ export default function index() {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const [page, setPage] = useState("");
   return (
     <div className="bg-white">
-      <Sidebar menu={menu} Open={isOpen} setOpen={setIsOpen} />
+      <Sidebar
+        menu={menu}
+        Open={isOpen}
+        setOpen={setIsOpen}
+        page={page}
+        setPage={setPage}
+      />
       <Navbar Open={isOpen} setOpen={setIsOpen} />
       <Dashboard />
     </div>

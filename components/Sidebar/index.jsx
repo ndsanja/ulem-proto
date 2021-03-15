@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Sidebar(props) {
   return (
     <>
@@ -24,29 +25,29 @@ export default function Sidebar(props) {
             </span>
           </div>
           <div className="flex flex-col space-y-6 justify-start items-start mt-12 font-semibold font-mono">
-            <div>
-              <div className="pb-2">DASHBOARD</div>
-              <ul className="list-outside list-disc pl-6 space-y-2">
-                <li
-                  onClick={() => props.setOpen(false)}
-                  className="text-gray-300 hover:text-white cursor-pointer"
-                >
-                  Home
-                </li>
-              </ul>
-            </div>
             {props.menu.map((cat) => (
               <div key={cat.id}>
                 <div className="pb-2 uppercase">{cat.category}</div>
                 <ul className="list-outside list-disc pl-6 space-y-2">
-                  {cat.list.map((i) => (
-                    <li
-                      onClick={() => props.setOpen(false)}
-                      key={i}
-                      className="capitalize cursor-pointer text-gray-300 hover:text-white"
+                  {cat.list.map((list) => (
+                    <Link
+                      key={list.menu}
+                      href={`/${cat.category}/${list.menu}`}
                     >
-                      {i}
-                    </li>
+                      <a>
+                        <li
+                          onClick={() => props.setOpen(false)}
+                          onClick={() =>
+                            props.setPage(
+                              `${cat.id + cat.category + list.menu}`
+                            )
+                          }
+                          className="capitalize cursor-pointer text-gray-300 hover:text-white"
+                        >
+                          {list.menu}
+                        </li>
+                      </a>
+                    </Link>
                   ))}
                 </ul>
               </div>
