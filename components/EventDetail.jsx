@@ -340,8 +340,6 @@ export default function EventDetail() {
                 <div className="font-semibold text-gray-700">Djoko Widodo</div>
                 <div className="flex text-xs text-green-500 items-center space-x-1">
                   <Icon.Mail className="h-3 w-3 text-yellow-500" />
-                  <Icon.Check className="h-3 w-3 text-green-500" />
-                  <Icon.Chat className="h-3 w-3" />
                 </div>
               </div>
             </div>
@@ -375,8 +373,6 @@ export default function EventDetail() {
                 </div>
                 <div className="flex text-xs text-green-500 items-center space-x-1">
                   <Icon.Mail className="h-3 w-3 text-yellow-500" />
-                  <Icon.Check className="h-3 w-3 text-green-500" />
-                  <Icon.Chat className="h-3 w-3" />
                 </div>
               </div>
             </div>
@@ -410,8 +406,6 @@ export default function EventDetail() {
                 </div>
                 <div className="flex text-xs text-green-500 items-center space-x-1">
                   <Icon.Mail className="h-3 w-3 text-yellow-500" />
-                  <Icon.Check className="h-3 w-3 text-green-500" />
-                  <Icon.Chat className="h-3 w-3" />
                 </div>
               </div>
             </div>
