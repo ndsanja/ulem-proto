@@ -18,12 +18,17 @@ export default function Sidebar(props) {
         } `}
       >
         <div className="flex flex-col px-8 pt-8 pb-16">
-          <div className="flex flex-col">
-            <div className="text-6xl font-extrabold font-mono">ULeM</div>
-            <span className="text-xs font-medium font-mono">
-              my event planner and assistans
-            </span>
-          </div>
+          <Link href="/">
+            <a>
+              <div className="flex flex-col">
+                <div className="text-6xl font-extrabold font-mono">ULeM</div>
+                <span className="text-xs font-medium font-mono">
+                  my event planner and assistans
+                </span>
+              </div>
+            </a>
+          </Link>
+
           <div className="flex flex-col space-y-6 justify-start items-start mt-12 font-semibold font-mono">
             {props.menu.map((cat) => (
               <div key={cat.id}>

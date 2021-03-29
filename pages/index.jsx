@@ -1,22 +1,18 @@
-import Dashboard from "../components/Dashboard";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import { useState } from "react";
+import Link from "next/link";
 
 export default function index() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [page, setPage] = useState("");
   return (
-    <div className="bg-white">
-      <Sidebar
-        menu={menu}
-        Open={isOpen}
-        setOpen={setIsOpen}
-        page={page}
-        setPage={setPage}
-      />
-      <Navbar Open={isOpen} setOpen={setIsOpen} />
-      <Dashboard />
-    </div>
+    <>
+      <Link href="/home">
+        <a>
+          <div className="flex flex-col items-center justify-center h-screen w-screen">
+            <div className="font-mono font-extrabold text-9xl">ULeM</div>
+            <div className="font-semibold text-gray-700  font-mono tracking-tighter">
+              my invitations, events & assistant
+            </div>
+          </div>
+        </a>
+      </Link>
+    </>
   );
 }
