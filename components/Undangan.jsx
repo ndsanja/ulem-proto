@@ -49,47 +49,54 @@ export default function Undangan() {
           </a>
         </Link>
       </div>
-      <div className="w-full bg-gray-500 bg-opacity-10 h-52 rounded shadow-lg relative overflow-hidden">
-        <div className="h-full w-full overflow-hidden absolute">
-          <img
-            className="h-full w-full opacity-40 object-center object-cover"
-            src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-        </div>
-        <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-semibold py-2 px-4 rounded-bl-lg">
-          WEDDING
-        </div>
-        <div className="absolute top-2 left-2 flex space-x-2 items-center">
-          <div className="h-10 w-10 bg-yellow-500 rounded-2xl overflow-hidden">
-            <img
-              className="h-full w-full object-cover object-center"
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cGVvcGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              alt=""
-            />
+
+      <Link href="/invitations">
+        <a>
+          <div className="w-full bg-gray-500 bg-opacity-10 h-52 rounded shadow-lg relative overflow-hidden">
+            <div className="h-full w-full overflow-hidden absolute">
+              <img
+                className="h-full w-full opacity-40 object-center object-cover"
+                src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+            <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-semibold py-2 px-4 rounded-bl-lg">
+              WEDDING
+            </div>
+            <div className="absolute top-2 left-2 flex space-x-2 items-center">
+              <div className="h-10 w-10 bg-yellow-500 rounded-2xl overflow-hidden">
+                <img
+                  className="h-full w-full object-cover object-center"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cGVvcGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+              <div className="font-semibold text-gray-700">juliete</div>
+            </div>
+            <div className="p-2 flex flex-col items-center justify-center w-full h-full font-semibold relative">
+              <div className="text-gray-700 text-2xl"> Romeo & Juliete</div>
+              <div className="text-gray-600 text-sm">Wedding Celebration</div>
+              <div className="text-gray-600 text-sm">17 Agustus 2021</div>
+              <div className="flex space-x-1 items-center justify-center py-2 underline">
+                <Icon.Location className="h-3 w-3 text-gray-700" />
+                <div className="text-gray-700 text-xs">
+                  Hotel Grand Indonesia
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center justify-center space-x-4 text-gray-700 text-sm absolute left-1/2 transform -translate-x-1/2 bottom-4 font-semibold w-full">
+              <div className="flex items-center space-x-1">
+                <Icon.Clock className="h-4 w-4" />
+                <div>3 Bulan 10 hari</div>
+              </div>
+              <div className="flex items-center space-x-1">
+                <Icon.Check className="h-4 w-4" />
+                <div>Hadir</div>
+              </div>
+            </div>
           </div>
-          <div className="font-semibold text-gray-700">juliete</div>
-        </div>
-        <div className="p-2 flex flex-col items-center justify-center w-full h-full font-semibold relative">
-          <div className="text-gray-700 text-2xl"> Romeo & Juliete</div>
-          <div className="text-gray-600 text-sm">Wedding Celebration</div>
-          <div className="text-gray-600 text-sm">17 Agustus 2021</div>
-          <div className="flex space-x-1 items-center justify-center py-2 underline">
-            <Icon.Location className="h-3 w-3 text-gray-700" />
-            <div className="text-gray-700 text-xs">Hotel Grand Indonesia</div>
-          </div>
-        </div>
-        <div className="flex items-center justify-center space-x-4 text-gray-700 text-sm absolute left-1/2 transform -translate-x-1/2 bottom-4 font-semibold w-full">
-          <div className="flex items-center space-x-1">
-            <Icon.Clock className="h-4 w-4" />
-            <div>3 Bulan 10 hari</div>
-          </div>
-          <div className="flex items-center space-x-1">
-            <Icon.Check className="h-4 w-4" />
-            <div>Hadir</div>
-          </div>
-        </div>
-      </div>
+        </a>
+      </Link>
 
       <div className="w-full bg-yellow-800 bg-opacity-20 h-52 rounded shadow-lg relative overflow-hidden">
         <div className="h-full w-full overflow-hidden absolute">
