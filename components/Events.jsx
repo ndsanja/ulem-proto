@@ -5,20 +5,54 @@ import Link from "next/link";
 export default function Events() {
   const router = useRouter();
   return (
-    <div className="flex flex-col w-full px-4 py-16 space-y-4 relative bg-white">
-      <div className="fixed z-30 bg-gray-600 top-0 left-0 right-0 h-14 px-4 flex items-center justify-between">
-        <div className="flex space-x-4 items-center">
-          <div onClick={() => router.back()}>
-            <Icon.ArrowBack className="h-8 w-8 text-gray-100" />
-          </div>
-          <div className="font-semibold text-xl text-gray-100">Events</div>
-        </div>
-        <Icon.Menu className="h-8 w-8 text-gray-100" />
+    <div className="flex flex-col w-full px-4 pt-16 pb-20 space-y-4 relative bg-white">
+      <div className="fixed z-30 shadow-inner text-gray-700 bg-white top-0 left-0 right-0 h-14 px-3 flex items-center justify-between border-b">
+        <Link href="/home">
+          <a className="flex flex-col items-center justify-center">
+            <div className="font-medium text-lg">My Events</div>
+          </a>
+        </Link>
+        <Link href="/notif">
+          <a className="flex flex-col items-center justify-center">
+            <Icon.Message className="h-6 w-6" />
+          </a>
+        </Link>
+      </div>
+      <div className="fixed z-30 shadow-inner text-gray-700 bg-white bottom-0 left-0 right-0 h-14 px-3 flex items-center justify-around">
+        <Link href="/home">
+          <a className="flex flex-col items-center justify-center">
+            <Icon.Home className="h-6 w-6" />
+            <div className="text-xs">Home</div>
+          </a>
+        </Link>
+        <Link href="/undangan">
+          <a className="flex flex-col items-center justify-center">
+            <Icon.MailOpen className="h-6 w-6" />
+            <div className="text-xs">Invitations</div>
+          </a>
+        </Link>
+        <Link href="/add">
+          <a className="flex flex-col items-center justify-center">
+            <Icon.PlusCircle className="h-10 w-10" />
+          </a>
+        </Link>
+        <Link href="/events">
+          <a className="flex flex-col items-center justify-center">
+            <Icon.SpeakerBlack className="h-6 w-6" />
+            <div className="text-xs">Events</div>
+          </a>
+        </Link>
+        <Link href="/notif">
+          <a className="flex flex-col items-center justify-center">
+            <Icon.Bell className="h-6 w-6" />
+            <div className="text-xs">Notify</div>
+          </a>
+        </Link>
       </div>
 
       <Link href="/event-detail">
         <a>
-          <div className="w-full bg-gray-500 bg-opacity-10 h-64 rounded shadow-xl relative overflow-hidden">
+          <div className="w-full bg-gray-500 bg-opacity-10 h-64 rounded shadow-lg relative overflow-hidden">
             <div className="h-full w-full overflow-hidden absolute">
               <img
                 className="h-full w-full opacity-40 object-center object-cover"
