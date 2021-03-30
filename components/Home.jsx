@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center pt-2 w-full space-x-2">
           <div className="flex flex-col items-center justify-center py-4 px-3 w-full border rounded-lg border-gray-500">
-            <div className="text-xl pb-4">Your Next Events</div>
+            <div className="text pb-4">Your Next Events & Invitations</div>
             <div className="flex items-center justify-between w-full mb-4">
               <div className="flex items-center justify-center space-x-2">
                 <div className="h-14 w-14 bg-yellow-500 rounded-xl overflow-hidden">
